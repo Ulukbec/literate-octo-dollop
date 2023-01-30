@@ -1,4 +1,5 @@
-from django.shortcuts import render
+from django.shortcuts import render, HttpResponse
+
 from product.models import Product
 
 
@@ -15,3 +16,7 @@ def products_view(request):
             'products': products
         }
         return render(request, 'product/product.html', context=data)
+
+
+def product(request):
+    return HttpResponse(request, 'Hello')
