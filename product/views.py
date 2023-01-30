@@ -19,3 +19,6 @@ def products_view(request):
 
 def product(request):
     return HttpResponse(request, 'huia')
+
+def product_asd(request):
+    return HttpResponse(request, 'hsdf')
