@@ -18,4 +18,4 @@ def products_view(request):
         return render(request, 'product/product.html', context=data)
 
 def product(request):
-    return HttpResponse(request, 'hui')a
+    return HttpResponse(request, 'huia')
