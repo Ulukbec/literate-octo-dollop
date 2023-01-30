@@ -17,6 +17,5 @@ def products_view(request):
         }
         return render(request, 'product/product.html', context=data)
 
-
 def product(request):
-    return HttpResponse(request, 'Hello')
+    return HttpResponse(request, 'hui')
